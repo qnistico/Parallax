@@ -72,15 +72,17 @@ html, body {
 
 #btn {
   text-decoration: none;
-  padding: 8px 30px;
+  padding: 0.5rem 2.25rem;
   border-radius: 45px;
   background-color: white;
   color: #2b1055;
   font-size: 1rem;
   z-index: 9;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  -webkit-transform: translateY(7.4vw);
+          transform: translateY(7.4vw);
   position: absolute;
+  text-align: center;
+  width: 10%;
 }
 
 .words {
