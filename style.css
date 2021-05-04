@@ -80,6 +80,7 @@ html, body {
   z-index: 9;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
+  position: absolute;
 }
 
 .words {
