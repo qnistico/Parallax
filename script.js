@@ -8,7 +8,7 @@ let mountains_front = document.getElementById('mountains_front');
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     stars.style.left = value * 0.5 + 'px';
-    moon.style.top = value * 1 + 'px';
+    moon.style.top = value * 1.19 + 'px';
     mountains_behind.style.top = value * 0.618 + 'px';
     text.style.marginTop = value * 1.65 + 'px';
     btn.style.marginTop = value * 1.75 + 'px';
