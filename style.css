@@ -9,19 +9,9 @@
 html, body {
   font-size: 16px;
   line-height: 25.88px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2b1055), to(#7597de));
-  background: linear-gradient(#2b1055, #7597de);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c0b38), to(#2b1055));
+  background: linear-gradient(#1c0b38, #2b1055);
   overflow-x: hidden;
-}
-
-.hero_container::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#1c0522), to(transparent));
-  background: linear-gradient(to top, #1c0522, transparent);
 }
 
 .hero_container {
@@ -41,11 +31,12 @@ html, body {
 }
 
 .hero_container h2 {
-  position: absolute;
+  position: absolute !important;
   color: white;
   white-space: nowrap;
   z-index: 9;
   font-size: 7.5vw;
+  font-weight: 500;
 }
 
 .hero_container img {
