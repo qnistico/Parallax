@@ -10,6 +10,7 @@ html, body {
   font-size: 16px;
   line-height: 25.88px;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero_container {
@@ -59,8 +60,8 @@ html, body {
   color: white;
   white-space: nowrap;
   z-index: 9;
-  font-size: 5vw;
-  font-weight: 500;
+  font-size: 3.2rem;
+  font-weight: 700;
 }
 
 .hero_container h2 {
@@ -133,8 +134,8 @@ html, body {
 }
 
 .content_1 .c1_flex_child {
-  width: 25%;
-  min-width: 500px;
+  width: 38%;
+  min-width: 450px;
   margin: 5rem 0 0 -50% !important;
   background: white;
   z-index: 11;
@@ -143,15 +144,20 @@ html, body {
   padding: 2rem;
 }
 
+.content_1 .c1_flex_child h2 {
+  font-weight: 800;
+}
+
 .content_1 img {
   position: absolute;
-  width: 100%;
+  width: 85%;
   top: 1rem;
   z-index: 1;
 }
 
 .words {
-  background-color: #1c0522;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c0b38), to(black));
+  background: linear-gradient(#1c0b38, black);
   color: white;
   padding: 5rem;
   z-index: 9999 !important;

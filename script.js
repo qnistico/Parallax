@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+    new WOW().init();
+  });
+
 let stars = document.getElementById('stars');
 let moon = document.getElementById('moon');
 let small_planet = document.getElementById('small_planet');
@@ -16,9 +20,8 @@ window.addEventListener('scroll', function(){
     small_planet.style.top = value * 0.35 + 'px';
     planet_top_left.style.top = value * -0.1 + 'px';
     planet_middle_left.style.top = value * 0.618 + 'px';
-    planet_middle_left.style.left = value * -0.618 + 'px';
-    planet_middle_right.style.top = value * 0.618 + 'px';
-    planet_top_right.style.top = value * 1.25 + 'px';
+    planet_middle_left.style.left = value * -0.318 + 'px';
+    planet_middle_right.style.top = value * .618 + 'px';
     planet_bottom_right.style.left = value * -1.25 + 'px';
     hero_content.style.marginBottom = value * -1+ 'px';
 })
