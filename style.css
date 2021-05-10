@@ -121,6 +121,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
@@ -134,25 +135,38 @@ html, body {
 }
 
 .content_1 .c1_flex_child {
-  width: 38%;
-  min-width: 450px;
-  margin: 5rem 0 0 -50% !important;
-  background: white;
+  width: 35%;
+  margin: 2rem;
   z-index: 11;
-  color: black;
+  color: white;
   border-radius: 45px;
   padding: 2rem;
 }
 
 .content_1 .c1_flex_child h2 {
+  font-size: 3rem;
   font-weight: 800;
+  border-radius: 24px;
+  margin-bottom: 1rem;
+}
+
+.content_1 .c1_flex_child .c1_button {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#691AD3), to(#2B1055));
+  background: linear-gradient(#691AD3, #2B1055);
+  padding: 1rem 2rem;
+  position: relative;
+  top: 1rem;
+  border-radius: 16px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .content_1 img {
-  position: absolute;
-  width: 85%;
-  top: 1rem;
-  z-index: 1;
+  width: 38%;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 .words {
