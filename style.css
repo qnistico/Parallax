@@ -11,6 +11,7 @@ html, body {
   line-height: 25.88px;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 .hero_container {
@@ -107,17 +108,17 @@ html, body {
   width: 35%;
 }
 
-.content_1 {
+.content_1, .content_2 {
   width: 100%;
   height: 100vh;
-  z-index: 9999 !important;
+  z-index: 98 !important;
   position: relative;
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#1c0b38), to(black));
   background: linear-gradient(#1c0b38, black);
 }
 
-.content_1 .content_1_flex {
+.content_1 .content_1_flex, .content_1 .content_2_flex, .content_2 .content_1_flex, .content_2 .content_2_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,7 +135,7 @@ html, body {
           justify-content: center;
 }
 
-.content_1 .c1_flex_child {
+.content_1 .c1_flex_child, .content_1 .c2_flex_child, .content_2 .c1_flex_child, .content_2 .c2_flex_child {
   width: 35%;
   margin: 2rem;
   z-index: 11;
@@ -143,14 +144,14 @@ html, body {
   padding: 2rem;
 }
 
-.content_1 .c1_flex_child h2 {
+.content_1 .c1_flex_child h2, .content_1 .c2_flex_child h2, .content_2 .c1_flex_child h2, .content_2 .c2_flex_child h2 {
   font-size: 3rem;
   font-weight: 800;
   border-radius: 24px;
   margin-bottom: 1rem;
 }
 
-.content_1 .c1_flex_child .c1_button {
+.content_1 .c1_flex_child .c1_button, .content_1 .c2_flex_child .c1_button, .content_2 .c1_flex_child .c1_button, .content_2 .c2_flex_child .c1_button {
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#691AD3), to(#2B1055));
   background: linear-gradient(#691AD3, #2B1055);
@@ -163,7 +164,7 @@ html, body {
   letter-spacing: 1px;
 }
 
-.content_1 img {
+.content_1 img, .content_2 img {
   width: 38%;
   margin: 2rem;
   padding: 2rem;
@@ -200,6 +201,22 @@ html, body {
 
 .words p {
   margin: 2rem 0;
+}
+
+.navbar {
+  z-index: 9999 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .navbar-collapse {
+  margin-left: 35%;
+}
+
+.navbar .navbar-collapse a {
+  margin: auto 2rem;
+  font-weight: 600;
+  background: transparent !important;
 }
 
 @-webkit-keyframes float {
