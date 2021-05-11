@@ -10,6 +10,7 @@ html, body {
   font-size: 16px;
   line-height: 25.88px;
   overflow-x: hidden;
+  overflow-y: auto;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
@@ -25,6 +26,8 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -109,18 +112,24 @@ html, body {
 }
 
 .content_2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#1c0b38)) !important;
-  background: linear-gradient(black, #1c0b38) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b1055), to(#1c0b38)) !important;
+  background: linear-gradient(#2b1055, #1c0b38) !important;
+}
+
+.content_container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c0b38), to(#2b1055));
+  background: linear-gradient(#1c0b38, #2b1055);
+  z-index: 9999 !important;
 }
 
 .content_1, .content_2 {
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c0b38), to(#2b1055));
+  background: linear-gradient(#1c0b38, #2b1055);
   z-index: 98 !important;
   padding: 1rem;
   position: relative;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1c0b38), to(black));
-  background: linear-gradient(#1c0b38, black);
 }
 
 .content_1 .content_1_flex, .content_1 .content_2_flex, .content_2 .content_1_flex, .content_2 .content_2_flex {
@@ -158,8 +167,6 @@ html, body {
 
 .content_1 .c1_flex_child .c1_button, .content_1 .c2_flex_child .c1_button, .content_2 .c1_flex_child .c1_button, .content_2 .c2_flex_child .c1_button {
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(#691AD3), to(#2B1055));
-  background: linear-gradient(#691AD3, #2B1055);
   padding: 1rem 2rem;
   position: relative;
   top: 1.5rem;
@@ -167,12 +174,25 @@ html, body {
   font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: 1px;
+  background-color: #110820;
+  border: 1px solid white;
 }
 
 .content_1 img, .content_2 img {
   width: 38%;
   margin: 2rem;
   padding: 2rem 2rem 2rem 2rem;
+}
+
+.content_1 #rocket_1, .content_2 #rocket_1 {
+  width: 10.1vw;
+  position: absolute;
+  left: 55%;
+}
+
+.rocket_1_animation {
+  -webkit-animation: lightSpeedOut 3s;
+          animation: lightSpeedOut 3s;
 }
 
 #hero_content {
@@ -286,6 +306,39 @@ html, body {
   100% {
     -webkit-transform: translatey(0px);
             transform: translatey(0px);
+  }
+}
+
+.lightSpeedOut {
+  -webkit-animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
