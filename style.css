@@ -108,10 +108,15 @@ html, body {
   width: 35%;
 }
 
+.content_2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#1c0b38)) !important;
+  background: linear-gradient(black, #1c0b38) !important;
+}
+
 .content_1, .content_2 {
   width: 100%;
-  height: 100vh;
   z-index: 98 !important;
+  padding: 1rem;
   position: relative;
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#1c0b38), to(black));
@@ -167,7 +172,12 @@ html, body {
 .content_1 img, .content_2 img {
   width: 38%;
   margin: 2rem;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+#hero_content {
+  -webkit-animation: float-2 5s ease-in-out infinite;
+          animation: float-2 5s ease-in-out infinite;
 }
 
 #small_planet {
@@ -210,7 +220,7 @@ html, body {
 }
 
 .navbar .navbar-collapse {
-  margin-left: 35%;
+  margin-left: 36%;
 }
 
 .navbar .navbar-collapse a {
@@ -242,6 +252,36 @@ html, body {
   50% {
     -webkit-transform: translatey(-38.19px);
             transform: translatey(-38.19px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@-webkit-keyframes float-2 {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(23px);
+            transform: translatey(23px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float-2 {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(23px);
+            transform: translatey(23px);
   }
   100% {
     -webkit-transform: translatey(0px);

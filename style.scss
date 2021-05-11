@@ -88,10 +88,14 @@ html, body {
     width: 35%;
 }
 
+.content_2 {
+    background: linear-gradient(black, #1c0b38) !important;
+}
+
 .content_1, .content_2 {
     width: 100%;
-    height: 100vh;
     z-index: 98 !important;
+    padding: 1rem;
     position: relative;
     color: white;
     background: linear-gradient(#1c0b38, black);
@@ -132,9 +136,13 @@ html, body {
     img {
         width: 38%;
         margin: 2rem;
-        padding: 2rem;
+        padding: 2rem 2rem 2rem 2rem;
         
     }
+}
+
+#hero_content {
+    animation: float-2 5s ease-in-out infinite;
 }
 
 #small_planet {
@@ -167,7 +175,7 @@ html, body {
     z-index: 9999 !important;
     box-shadow: none;
     .navbar-collapse {
-        margin-left: 35%;
+        margin-left: 36%;
         a {
             margin: auto 2rem;
             font-weight: 600;
@@ -186,4 +194,16 @@ html, body {
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+@keyframes float-2 {
+    0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(23px);
+	}
+	100% {
+		transform: translatey(0px);
+    }
 }
