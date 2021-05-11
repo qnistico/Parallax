@@ -20,7 +20,7 @@ let c1_img = document.getElementById('c1_img');
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     stars.style.left = value * 0.5 + 'px';
-    small_planet.style.top = value * 0.35 + 'px';
+    small_planet.style.top = value * 0.84 + 'px';
     planet_top_left.style.top = value * 0.25 + 'px';
     planet_middle_left.style.top = value * 0.618 + 'px';
     planet_middle_left.style.left = value * -0.318 + 'px';
